@@ -1,0 +1,11 @@
+-- CreateTable
+CREATE TABLE "Book" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "title" TEXT NOT NULL,
+    "totalPages" INTEGER NOT NULL,
+    "currentPage" INTEGER NOT NULL DEFAULT 0,
+    "startDate" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "endDate" DATETIME NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL
+);

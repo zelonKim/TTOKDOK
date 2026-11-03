@@ -1,0 +1,21 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Book {
+  id              String   @id @default(uuid())
+  title           String // 책 제목
+  totalPages      Int // 총 페이지 수
+  currentPage     Int      @default(0) // 현재까지 읽은 누적 페이지
+  startDate       DateTime @default(now()) // 독서 시작일
+  targetDate      DateTime // 목표 완독일
+  realization     String? // 느낀점 및 깨달은점
+  finishedReading Int      @default(0) // 완독 횟수
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
