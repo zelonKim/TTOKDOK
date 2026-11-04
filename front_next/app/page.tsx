@@ -16,7 +16,7 @@ export default function Home() {
       <section className="w-full max-w-3xl mx-auto text-center space-y-12 my-auto py-24">
         <div className="space-y-4">
           <span className="inline-block text-xs uppercase tracking-widest text-[#785E48] font-bold px-3 py-1 bg-[#EFECE6] rounded-full">
-            Smart Reading Habit
+            📚 Smart Reading Habit
           </span>
           <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight text-[#2A211B] leading-tight">
             똑독{" "}
@@ -28,9 +28,9 @@ export default function Home() {
 
         <div className="py-6 border-y border-[#EFECE6] max-w-xl mx-auto">
           <p className="text-base sm:text-lg text-[#5E4837] leading-relaxed font-medium">
-            어떤 책을 읽을지 아직도 고민하거나, 그저 독서를 미루고 계신가요? 🤔
+            어떤 책을 읽을지 아직도 고민하거나, 그저 독서를 미루고 계신가요?
             <br />
-            이제부터 똑독과 함께 똑똑한 독서 습관을 만들어가요. 📚
+            이제부터 똑독과 함께 똑똑한 독서 습관을 만들어가요.
           </p>
         </div>
 

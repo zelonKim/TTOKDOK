@@ -9,4 +9,5 @@ export interface Book {
   finishedReading: number;
   createdAt: string;
   updatedAt: string;
+  recommendedPagesPerDay: number;
 }

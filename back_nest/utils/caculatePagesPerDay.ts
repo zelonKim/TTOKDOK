@@ -6,7 +6,7 @@ export function calculatePagesPerDay(status: BookReadingStatus) {
   const target = new Date(status.targetDate);
   const diffTime = target.getTime() - today.getTime();
 
-  // 남은 일수(D-day) 계산
+  // 남은 일 수 계산
   const remainingDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
   // 남은 페이지 수 계산
@@ -21,8 +21,6 @@ export function calculatePagesPerDay(status: BookReadingStatus) {
   }
 
   return {
-    remainingDays: remainingDays > 0 ? remainingDays : 0,
-    remainingPages,
     recommendedPagesPerDay,
   };
 }
