@@ -116,6 +116,12 @@ export class BooksService {
     const newCurrentPage =
       dto.currentPage !== undefined ? dto.currentPage : book.currentPage;
 
+      
+    if (newCurrentPage > totalPages) {
+      throw new BadRequestException(
+        '현재 읽은 페이지는 총 페이지 수를 초과할 수 없습니다.',
+      );
+    }
     // 완독 조건 체크
     const isNowFinished = newCurrentPage >= totalPages;
     const wasAlreadyFinished = book.currentPage >= book.totalPages;

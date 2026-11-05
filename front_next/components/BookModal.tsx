@@ -131,7 +131,8 @@ export default function BookModal({ isOpen, onClose, book }: BookModalProps) {
               <input
                 type="number"
                 min="0"
-                value={formData.currentPage}
+                placeholder="현재 페이지 수를 입력해주세요. (예: 20)"
+                value={formData.currentPage || ""}
                 onChange={(e) =>
                   setFormData({
                     ...formData,
